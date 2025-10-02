@@ -1,5 +1,5 @@
 # ---- Actividad 1 ----
-for i in range(100+1):
+for i in range(100 + 1):
     print(i)
 
 
@@ -37,7 +37,7 @@ while not fin.isdigit():
 fin = int(fin)
 
 acumulador = 0
-for i in range(inicio+1, fin):
+for i in range(inicio + 1, fin):
     acumulador += i
 
 print(f"El total de la suma del intervalo ({inicio}; {fin}) es:", acumulador)
@@ -52,7 +52,8 @@ while numero != 0:
         numero = input("Ingrese un numero (0 para finalizar):")
         if not numero.isdigit():
             print("ERROR: El numero ingresado no es valido")
-        else: break
+        else:
+            break
     numero = int(numero)
     if numero != 0:
         acumulador += numero
@@ -63,7 +64,7 @@ print("Total acumulado:", acumulador)
 # ---- Actividad 5 ----
 import random
 
-numero_secreto = random.randrange(0, 9+1) and 0
+numero_secreto = random.randrange(0, 9 + 1) and 0
 intentos = 0
 numero = -1
 
@@ -76,7 +77,8 @@ while numero != numero_secreto:
         numero = input("Ingrese un numero: ")
         if not numero.isdigit():
             print("ERROR: El numero ingresado no es valido")
-        else: break
+        else:
+            break
     numero = int(numero)
 
     intentos += 1
@@ -86,10 +88,10 @@ print(f"Intentaste adivinar {intentos} {intentos == 1 and 'vez' or 'veces'}")
 
 
 # ---- Actividad 6 ----
-for i in range(100+1, 0, -1):
+for i in range(100 + 1, 0, -1):
     # Si el numero es par...
     if i % 2 == 0:
-        print(i) # ...mostrarlo
+        print(i)  # ...mostrarlo
 
 
 # ---- Actividad 7 ----
@@ -100,10 +102,11 @@ while True:
     fin = input("Ingrese el numero maximo a iterar:").strip()
     if not fin.isdigit():
         print("ERROR: El numero ingresado no es valido")
-    else: break
+    else:
+        break
 fin = int(fin)
 
-for i in range(0, fin+1):
+for i in range(0, fin + 1):
     acumulado += i
 
 print(f"La suma de todos los numeros entre [0; {fin}] es:", acumulado)
@@ -129,7 +132,7 @@ for i in range(LIMITE):
         cont_pares += 1
     else:
         cont_impares += 1
-    
+
     if numero > 0:
         cont_positivos += 1
     elif numero != 0:
@@ -151,13 +154,13 @@ acumulador = 0
 
 for i in range(LIMITE):
     numero = input(f"Ingrese un numero ({i+1} de {LIMITE}):")
-    while not numero.isdigit() and not (numero.startswith("-") and numero[1:].isdigit()):
+    while not numero.isdigit() and not (
+        numero.startswith("-") and numero[1:].isdigit()
+    ):
         print("ERROR: El numero ingresado es invalido")
         numero = input(f"Ingrese un numero ({i+1} de {LIMITE}):")
     numero = int(numero)
-
     acumulador += numero
-
 
 media = acumulador / LIMITE
 
