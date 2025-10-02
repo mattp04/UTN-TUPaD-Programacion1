@@ -169,6 +169,7 @@ numero = input("Ingrese un número:")
 while not numero.isdigit():
     print("ERROR: El numero ingresado no es valido")
     numero = input("Ingrese un número:")
+numero = int(numero)
 
 numero_invertido = 0
 
