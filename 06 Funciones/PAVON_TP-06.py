@@ -73,8 +73,8 @@ def main():
 
     print("\n\n----- 2. Saludar usuario -----")
     nombre = input("¿Cuál es su nombre? ")
-    saludar_usuario(nombre)
-
+    saludo = saludar_usuario(nombre)
+    print(saludo)
 
     print("\n\n----- 3. Informacion personal -----")
     apellido = input("¿Cuál es su apellido? ")
