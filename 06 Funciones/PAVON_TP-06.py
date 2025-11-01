@@ -23,7 +23,7 @@ def calcular_perimetro_circulo(radio):
 
 
 def segundos_a_horas(segundos):
-    return segundos / 60
+    return segundos / 3600
 
 
 def tabla_multiplicar(numero):
