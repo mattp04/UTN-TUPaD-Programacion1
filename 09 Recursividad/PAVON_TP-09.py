@@ -23,6 +23,8 @@ num = int(input("Ingrese una posición para Fibonacci: "))
 for i in range(num + 1):
     print(fibonacci(i), end=" ")
 
+print()
+
 
 # ----- Ejercicio 3 -----
 def potencia(base, expo):
@@ -61,12 +63,17 @@ def es_palindromo(palabra):
     return es_palindromo(s[1:-1])
 
 # Ejemplos:
-print(es_palindromo("radar"))      # True
-print(es_palindromo("reconocer"))  # True
-print(es_palindromo("python"))     # False
+palabras = [
+    "radar", # radar es palindromo
+    "reconocer", # reconocer es palindromo
+    "python" # python NO es palindromo
+]
 
+for palabra in palabras:
+    print(f"{palabra} es palíndromo?", es_palindromo(palabra))
 
-# ----- Ejercicio 6 -----
+print()
+print("----- Ejercicio 6 -----")
 def suma_digitos(n):
     n = abs(n)  # por si ingresan un numero negativo
     if n < 10:
@@ -79,7 +86,8 @@ print(suma_digitos(9))     # 9
 print(suma_digitos(305))   # 8
 
 
-# ----- Ejercicio 7 -----
+print()
+print("----- Ejercicio 7 -----")
 def contar_bloques(n):
     if n <= 0:
         return 0
@@ -92,8 +100,8 @@ print(contar_bloques(1))  # 1
 print(contar_bloques(2))  # 3
 print(contar_bloques(4))  # 10
 
-
-# ----- Ejercicio 8 -----
+print()
+print("----- Ejercicio 8 -----")
 def contar_digito(numero, digito):
     if digito < 0 or digito > 9:
         raise ValueError("El dígito debe estar entre 0 y 9.")
