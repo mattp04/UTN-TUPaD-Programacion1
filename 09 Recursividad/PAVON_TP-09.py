@@ -1,4 +1,4 @@
-# ----- Ejercicio 1 -----
+print("----- Ejercicio 1 -----")
 def factorial(n):
     if n == 0 or n == 1:
         return 1
@@ -9,8 +9,8 @@ num = int(input("Ingrese un número: "))
 for i in range(1, num + 1):
     print(f"Factorial de {i}: {factorial(i)}")
 
-
-# ----- Ejercicio 2 -----
+print()
+print("----- Ejercicio 2 -----")
 def fibonacci(n):
     if n == 0:
         return 0
@@ -24,9 +24,8 @@ for i in range(num + 1):
     print(fibonacci(i), end=" ")
 
 print()
-
-
-# ----- Ejercicio 3 -----
+print()
+print("----- Ejercicio 3 -----")
 def potencia(base, expo):
     if expo == 0:
         return 1
@@ -36,8 +35,8 @@ b = int(input("Base: "))
 e = int(input("Exponente: "))
 print("Resultado:", potencia(b, e))
 
-
-# ----- Ejercicio 4 -----
+print()
+print("----- Ejercicio 4 -----")
 def decimal_a_binario(n):
     if n == 0:
         return "0"
@@ -48,8 +47,8 @@ def decimal_a_binario(n):
 num = int(input("Ingrese un número decimal: "))
 print("Binario:", decimal_a_binario(num))
 
-
-# ----- Ejercicio 5 -----
+print()
+print("----- Ejercicio 5 -----")
 def es_palindromo(palabra):
     # Normalización mínima: quitar espacios y pasar a minúsculas.
     s = palabra.replace(" ", "").lower()
